@@ -1,0 +1,9 @@
+&PROJWFC
+prefix = 'x0' ,
+outdir = './' ,
+filpdos = 'x.pdos' ,
+degauss = 0.007 ,
+DeltaE = 0.01 ,
+Emin = -10,
+Emax = 10,
+/

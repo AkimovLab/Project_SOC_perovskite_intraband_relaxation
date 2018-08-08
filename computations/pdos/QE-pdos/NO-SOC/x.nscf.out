@@ -1,0 +1,336 @@
+
+     Program PWSCF v.5.1.1 starts on 17Feb2018 at  5:27:15 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    48 processors
+     R & G space division:  proc/nbgrp/npool/nimage =      48
+     Waiting for input...
+     Reading input from standard input
+Warning: card &IONS ignored
+Warning: card   ION_DYNAMICS = 'VERLET', ignored
+Warning: card   ION_TEMPERATURE = 'ANDERSEN', ignored
+Warning: card   TEMPW = 300.00 , ignored
+Warning: card   NRAISE = 1, ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Atomic positions and unit cell read from directory:
+     ./x0.save/
+ 
+               file Pb.pbe-dn-rrkjus_psl.0.2.2.UPF: wavefunction(s)  6S renormalized
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     scalapack distributed-memory algorithm (size of sub-group:  4*  4 procs)
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         137      73     19                12119     4707     663
+     Max         138      74     20                12124     4740     672
+     Sum        6589    3521    949               581817   226697   32079
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       1.8897  a.u.
+     unit-cell volume          =    6630.5149 (a.u.)^3
+     number of atoms/cell      =           48
+     number of atomic types    =            5
+     number of electrons       =       200.00
+     number of Kohn-Sham states=          120
+     kinetic-energy cutoff     =      40.0000  Ry
+     charge density cutoff     =     300.0000  Ry
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+
+     celldm(1)=   1.889700  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   8.800900   0.000000   0.000000 )  
+               a(2) = (   0.000000   8.800900   0.000000 )  
+               a(3) = (   0.000000   0.000000  12.685700 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.113625  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.113625  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.078829 )  
+
+
+     PseudoPot. # 1 for  H read from file:
+     /home/weili/MAPbI3-tetra-bulk-fix-expt-DOS-QE/pseudo/H.pbe-rrkjus_psl.0.1.UPF
+     MD5 check sum: bd57da0722753ddfd9833a65b40bb853
+     Pseudo is Ultrasoft, Zval =  1.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of  929 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for Pb read from file:
+     /home/weili/MAPbI3-tetra-bulk-fix-expt-DOS-QE/pseudo/Pb.pbe-dn-rrkjus_psl.0.2.2.UPF
+     MD5 check sum: 7afc420059c37d6888fc09c0f121e83f
+     Pseudo is Ultrasoft + core correction, Zval = 14.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of 1281 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 3 for  C read from file:
+     /home/weili/MAPbI3-tetra-bulk-fix-expt-DOS-QE/pseudo/C.pbe-n-rrkjus_psl.0.1.UPF
+     MD5 check sum: ab446d787031eba755f1d5ee46644bb0
+     Pseudo is Ultrasoft + core correction, Zval =  4.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of 1073 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 4 for  I read from file:
+     /home/weili/MAPbI3-tetra-bulk-fix-expt-DOS-QE/pseudo/I.pbe-n-rrkjus_psl.0.2.UPF
+     MD5 check sum: f9a5bb98cc7d7d8a1a5c1f9867e5ab3f
+     Pseudo is Ultrasoft + core correction, Zval =  7.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of 1247 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 5 for  N read from file:
+     /home/weili/MAPbI3-tetra-bulk-fix-expt-DOS-QE/pseudo/N.pbe-n-rrkjus_psl.0.1.UPF
+     MD5 check sum: ed8b6a90f28a53b7d71920e7015d2dd6
+     Pseudo is Ultrasoft + core correction, Zval =  5.0
+     Generated using "atomic" code by A. Dal Corso  v.5.0.2 svn rev. 9415
+     Using radial grid of 1085 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        H              1.00     1.00800      H( 1.00)
+        Pb            14.00   207.20000     Pb( 1.00)
+        C              4.00    12.01000      C( 1.00)
+        I              7.00   126.90400      I( 1.00)
+        N              5.00    14.00700      N( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           H   tau(   1) = (   4.3925764   8.7573246  10.6553542  )
+         2           H   tau(   2) = (   4.6327933   7.5738288   9.3231202  )
+         3           H   tau(   3) = (   3.2876927   8.7609484   9.2393582  )
+         4           H   tau(   4) = (   5.1866381   0.6205910   7.8572689  )
+         5           H   tau(   5) = (   4.9248906   1.7413821   9.0751202  )
+         6           H   tau(   6) = (   6.2037988   0.6528552   9.1766211  )
+         7           H   tau(   7) = (   0.0000382   4.5601204   7.9883506  )
+         8           H   tau(   8) = (   8.7234913   5.9379223   9.1375815  )
+         9           H   tau(   9) = (   7.4137575   4.7153430   9.1191543  )
+        10           H   tau(  10) = (   0.1343185   4.3607374  10.9642452  )
+        11           H   tau(  11) = (   0.2392103   3.0574003   9.9063947  )
+        12           H   tau(  12) = (   1.4513938   4.2026622   9.9283413  )
+        13           H   tau(  13) = (   4.2409013  -0.0000390   1.6454119  )
+        14           H   tau(  14) = (   4.0856789   1.3872648   2.7762167  )
+        15           H   tau(  15) = (   2.8630993   0.0775311   2.7946442  )
+        16           H   tau(  16) = (   4.4402843   8.6667035   4.6213061  )
+        17           H   tau(  17) = (   4.5983592   7.3496292   3.5854034  )
+        18           H   tau(  18) = (   5.7436214   8.5618117   3.5634568  )
+        19           H   tau(  19) = (   0.0436988   4.4084463   4.3124167  )
+        20           H   tau(  20) = (   0.0400739   5.5133297   2.8964194  )
+        21           H   tau(  21) = (   1.2271933   4.1682281   2.9801814  )
+        22           H   tau(  22) = (   8.1804311   3.6143838   1.5143299  )
+        23           H   tau(  23) = (   8.1481669   2.5972226   2.8336831  )
+        24           H   tau(  24) = (   7.0596401   3.8761318   2.7321825  )
+        25           Pb  tau(  25) = (   0.0077249   8.6515006  12.5537417  )
+        26           Pb  tau(  26) = (   4.3908793   4.3225630  12.5636664  )
+        27           Pb  tau(  27) = (   0.1495215   8.7932973   6.2108038  )
+        28           Pb  tau(  28) = (   4.4784592   4.4101431   6.2207284  )
+        29           C   tau(  29) = (   3.9222983   0.3124668   2.6442611  )
+        30           C   tau(  30) = (   4.3160405   8.5912739   9.5766922  )
+        31           C   tau(  31) = (   0.2097489   4.4849816   3.2337546  )
+        32           C   tau(  32) = (   8.4885555   4.8787239   8.9871990  )
+        33           I   tau(  33) = (   1.8065807   2.4819856   0.2560269  )
+        34           I   tau(  34) = (   6.2141510   1.7199350  12.4543832  )
+        35           I   tau(  35) = (   2.5610016   6.8596953  -0.2755613  )
+        36           I   tau(  36) = (   7.1771610   5.9090122  12.3788492  )
+        37           I   tau(  37) = (   2.8920097   1.6238611   6.0359109  )
+        38           I   tau(  38) = (   1.9413270   6.2400203   6.0673764  )
+        39           I   tau(  39) = (   7.0810875   2.5868709   6.1114448  )
+        40           I   tau(  40) = (   6.3190363   6.9944416   6.5989645  )
+        41           I   tau(  41) = (   8.3429285  -0.0752517   3.0561280  )
+        42           I   tau(  42) = (   4.6489126   4.7524142   3.0547550  )
+        43           I   tau(  43) = (   0.0752515   0.4580937   9.3990659  )
+        44           I   tau(  44) = (   4.0486077   4.1521096   9.3976927  )
+        45           N   tau(  45) = (   4.7238198   8.3791083   3.6650225  )
+        46           N   tau(  46) = (   5.2123607   0.7583024   8.8816456  )
+        47           N   tau(  47) = (   8.0427196   3.5886615   2.5387075  )
+        48           N   tau(  48) = (   0.4219145   4.0772024  10.0079604  )
+
+     number of k points=   365 (tetrahedron method)
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   581817 G-vectors     FFT dimensions: (  96,  96, 135)
+
+     Smooth grid:   226697 G-vectors     FFT dimensions: (  72,  72, 100)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions         1.09 Mb     (     596,  120)
+        NL pseudopotentials             2.55 Mb     (     596,  280)
+        Each V/rho on FFT grid          0.42 Mb     (   27648)
+        Each G-vector array             0.09 Mb     (   12124)
+        G-vector shells                 0.04 Mb     (    5629)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions         4.37 Mb     (     596,  480)
+        Each subspace H/S matrix        0.22 Mb     (     120,  120)
+        Each <psi_i|beta_j> matrix      0.51 Mb     (     280,  120)
+
+     The potential is recalculated from file :
+     ./x0.save/charge-density.dat
+
+     Starting wfc are  140 randomized atomic wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+
+     ethr =  5.00E-09,  avg # of iterations = 75.5
+
+     total cpu time spent up to now is     3863.0 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     2.4749 ev
+
+     Writing output data file x0.save
+ 
+     init_run     :      1.17s CPU      1.19s WALL (       1 calls)
+     electrons    :   3830.79s CPU   3860.79s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.09s CPU      0.10s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :   3830.47s CPU   3860.47s WALL (       1 calls)
+     v_of_rho     :      0.03s CPU      0.03s WALL (       1 calls)
+     newd         :      0.16s CPU      0.17s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.56s CPU      0.59s WALL (     365 calls)
+     cegterg      :   3699.33s CPU   3728.28s WALL (    1546 calls)
+
+     Called by *egterg:
+     h_psi        :   1906.92s CPU   1912.70s WALL (   29468 calls)
+     s_psi        :     84.50s CPU     84.84s WALL (   29468 calls)
+     g_psi        :      4.77s CPU      4.82s WALL (   27557 calls)
+     cdiaghg      :   1370.62s CPU   1379.37s WALL (   27922 calls)
+
+     Called by h_psi:
+     add_vuspsi   :     88.69s CPU     89.12s WALL (   29468 calls)
+
+     General routines
+     calbec       :    158.89s CPU    159.48s WALL (   29468 calls)
+     fft          :      0.04s CPU      0.04s WALL (      13 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       1 calls)
+     fftw         :   1608.75s CPU   1612.52s WALL ( 1750982 calls)
+     interpolate  :      0.00s CPU      0.00s WALL (       1 calls)
+ 
+     Parallel routines
+     fft_scatter  :   1248.34s CPU   1251.49s WALL ( 1750996 calls)
+ 
+     PWSCF        :     1h 5m CPU        1h 9m WALL
+
+ 
+   This run was terminated on:   6:36:30  17Feb2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
