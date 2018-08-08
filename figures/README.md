@@ -1,0 +1,2 @@
+# PROJECT_SOC_perovskite_intraband_relaxation
+necessary files for making plots
