@@ -1,0 +1,49 @@
+
+     Program POST-PROC v.5.1.1 starts on 18Feb2018 at  8:18: 4 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    48 processors
+     R & G space division:  proc/nbgrp/npool/nimage =      48
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1s, nr2s, nr3s values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Pb.rel-pbe-dn-rrkjus_psl.0.2.2.UPF: wavefunction(s)  6S 5D renormalized
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         137      73     19                12119     4707     663
+     Max         138      74     20                12124     4740     672
+     Sum        6589    3521    949               581817   226697   32079
+ 
+
+     Calling punch_plot, plot_num =   7
+
+     Plotting k_point =   1  band =177
+     Writing data to file  tmp.dat
+     Reading data from file  tmp.dat
+
+     Writing data to be plotted to file VBM-11.cube
+     Plot Type: 3D                     Output format: Gaussian cube
+ 
+     POST-PROC    : 12m29.18s CPU    18m17.66s WALL
+
+ 
+   This run was terminated on:   8:36:22  18Feb2018            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

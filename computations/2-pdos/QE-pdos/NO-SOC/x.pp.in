@@ -1,0 +1,17 @@
+ &inputpp
+    prefix  = 'x0'
+    outdir = './'
+    filplot = 'tmp.dat'
+    plot_num= 7
+    kpoint=1
+    kband=106
+ /
+
+ &plot
+    nfile = 1
+    filepp(1) = 'tmp.dat'
+    weight(1) = 1.0
+    iflag = 3
+    output_format = 6
+    fileout = 'CBM+5-PBE.cube'
+ /

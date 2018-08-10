@@ -1,0 +1,39 @@
+SYSTEM = perovskite_MAPbI3
+
+#Startparameter for this run:
+  PREC = Accurate
+  ISTART = 0
+  ICHARG = 2
+#  ISPIN = 1   
+  ISMEAR = 0; 
+  SIGMA = 0.05
+  ALGO = FAST
+  GGA = PE 
+  LREAL = A  
+ 
+#Electronic Relaxation 1
+  NELM = 90  
+  NELMIN = 4
+  EDIFF = 1.0E-05
+#  LREAL = .TRUE.
+
+#Ionic Relaxation
+  EDIFFG = -0.01
+  NSW = 1000
+  IBRION = 2
+  ISIF = 2
+  POTIM= 0.2
+  
+
+#Electronic minimisation
+  ENCUT = 500 eV
+
+
+#Output
+  LWAVE = .FALSE.
+  LCHARG = .FALSE.    
+  NWRITE = 2
+  LDIPOL = .FALSE.
+  
+
+

@@ -1,0 +1,54 @@
+&CONTROL
+  calculation = 'scf',
+  pseudo_dir = '/home/rcf-proj2/op/wl_903/pp/',
+  outdir = './',
+  prefix = 'x0',
+  disk_io = 'low',
+  wf_collect = .true.
+/
+
+&SYSTEM
+  ibrav = 0,
+  nat = 48,
+  ntyp = 5,
+  celldm(1) = 1.8897,
+  ecutwfc = 40,
+  ecutrho   = 300 ,
+  tot_charge = 0.0,
+  nspin = 1,
+  occupations = 'smearing',
+  smearing = 'gaussian',
+  degauss = 0.005,
+  nosym = .true.,
+/
+
+&ELECTRONS
+  electron_maxstep = 300,
+  conv_thr = 1.D-5,
+  mixing_beta = 0.45,
+/
+
+&IONS
+  ion_dynamics = 'verlet',
+  ion_temperature = 'andersen',
+  tempw = 300.00 ,
+  nraise = 1,
+/
+
+
+ATOMIC_SPECIES
+H    1.008  H.pbe-rrkjus_psl.0.1.UPF
+Pb  207.2  Pb.pbe-dn-rrkjus_psl.0.2.2.UPF
+C   12.011  C.pbe-n-rrkjus_psl.0.1.UPF
+I   126.905  I.pbe-n-rrkjus_psl.0.2.UPF
+N   14.007  N.pbe-n-rrkjus_psl.0.1.UPF
+
+
+K_POINTS gamma                  
+                               
+CELL_PARAMETERS alat
+     8.800900    0.000000    0.000000
+     0.000000    8.800900    0.000000
+     0.000000    0.000000   12.685700
+
+
